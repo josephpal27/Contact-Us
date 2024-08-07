@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* font-family: "Montserrat", sans-serif; */
+    /* overflow: hidden; */
+  }
+
+
+/* Main Background Section Starts Here */
+.main-bg{
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -10;
+}
+.main-bg img{
+  width: 150%;
+  height: 100vh;
+}
+  /* Main Background Section Ends Here */
+   
+  /* --- Customize ScrollBars --- */
+  .footer .center .linkedin-content::-webkit-scrollbar {
+    width: 11px;
+  }
+  .footer .center .linkedin-content::-webkit-scrollbar-track {
+    background: #fff;
+  }
+  .footer .center .linkedin-content::-webkit-scrollbar-thumb {
+    background: #676767;
+    border-radius: 7px;
+  }
+  
+  /* Header Styles Starts Here */
+  header {
+    background-color: #ec9122;
+    padding: 5px 0;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+  }
+  .header a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .header .icons i {
+    margin-right: 7px;
+    transition: all 0.3s ease;
+  }
+  .header .icons i:hover {
+    scale: 1.2;
+    color: #5f86c3;
+  }
+  .header .email i {
+    margin-right: 1px;
+  }
+  /* Header Styles Ends Here */
+
+
+ /* Nav Styles Starts Here */
+ nav {
+    padding: 12px 0 !important;
+    font-family: "Montserrat", sans-serif !important;
+    background-color: #fff !important;
+  }
+  nav .nav-link {
+    font-weight: 500;
+  }
+  nav .dropdown-menu {
+    background-color: #e79b3e !important;
+  }
+  nav .dropdown-item {
+    color: #fff;
+    font-weight: 400;
+  }
+  nav .dropdown-item:hover,
+  nav .dropdown-item:focus {
+    background-color: #e79b3e !important;
+    color: #fff;
+  }
+
+  /* .dropdown-toggle::after {
+    display: none;
+  } */
+
+  /* Nav Styles Ends Here */
+
+
+  /* Top Image Section Starts Here */
+  .top-image{
+    width: 100%;
+    overflow: hidden;
+  }
+  .top-image img{
+    width: 100%;    
+  }
+  /* Top Image Section Ends Here */
+
+
+  /* Map Section Starts Here */
+  .map{
+    padding: 5rem 0;
+  }
+  .map .map-head{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .map .map-head h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fe9616;
+  }
+  .map .map-head img{
+    font-family: "Montserrat", sans-serif;
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+  }
+  
+  .map .india-map{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  .map .india-map{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  
+  /* Map Section Ends Here */
