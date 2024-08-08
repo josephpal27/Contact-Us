@@ -109,6 +109,7 @@
   /* Map Section Starts Here */
   .map{
     padding: 5rem 0;
+    overflow: hidden;
   }
   .map .map-head{
     display: flex;
@@ -129,15 +130,340 @@
     object-fit: contain;
   }
   
-  .map .india-map{
+  .map .india-map {
     display: flex;
     justify-content: center;
+    margin-top: 3rem;
+}
+.map .india-map .img-div {
+    position: relative;
+}
+.map .india-map #india {
+    margin-left: 6rem;
+}
+.map .india-map .flag {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+.map .india-map #flag-1 {
+    top: 9rem;
+    right: 16.3rem;
+}
+.map .india-map #flag-2 {
+    top: 14.9rem;
+    right: 10rem;
+}
+.map .india-map #flag-3 {
+    top: 18rem;
+    right: 18rem;
+}
+.map .india-map #flag-4 {
+    top: 21.5rem;
+    right: 15.5rem;
+}
+.map .india-map .address {
+    position: absolute;
+    background-color: #fff;
+    width: 18rem;
+    padding: 1rem;
+    margin: 0;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.map .india-map .address i{
+    position: absolute;
+    width: 10%;
+    left: 45%;
+    font-size: 1.5rem;
+    color: #fff;
+    transform: rotate(45deg);
+}
+.map .india-map p {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-align: justify;
+}
+.map .india-map #address-1 {
+    top: 2.5rem;
+    right: 10.1rem;
+}
+.map .india-map #address-2 {
+    top: 8.2rem;
+    right: 3.8rem;
+}
+.map .india-map #address-3 {
+    top: 11.5rem;
+    right: 11.9rem;
+}
+.map .india-map #address-4 {
+    top: 15rem;
+    right: 9.3rem;
+}
+  /* Map Section Ends Here */
+
+
+  /* Contact Form Section Starts Here */
+  .contact-us{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
     margin-top: 3rem;
   }
-  .map .india-map{
+  .contact-us .contact-form{
+    width: 45%;
+    /* overflow: hidden; */
+  }
+  .contact-us .contact-form h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    color: #000;
+  }
+  .contact-us .contact-form .input-row{
+   margin: 2rem 0;
+   position: relative;
+  }
+  .contact-us .contact-form .input-row input{
+   padding: 1rem;
+   border: 1.6px solid rgb(185, 185, 185);
+   outline: none;
+  }
+  .contact-us .contact-form .input-row input:focus{
+   border: 1.6px solid #fe9616;
+  }
+  .contact-us .contact-form #input-row-1{
     display: flex;
-    justify-content: center;
-    margin-top: 3rem;
+    justify-content: space-between;
+  }
+  .contact-us .contact-form #input-row-1 input{
+    width: 49%;
+  }
+  .contact-us .contact-form .input-row #services{
+    width: 100%;
+  }
+  .contact-us .contact-form .input-row #caret{
+    color: #676767;
+    font-size: 1.1rem;
+    position: absolute;
+    top: 1.3rem;
+    right: 1.1rem;
+    transition: transform 0.3s ease;
+  }
+  .contact-us .contact-form .input-row .input-dropdown.show ~ #caret {
+    transform: rotate(180deg);
+  }
+  .contact-us .contact-form .input-row textarea{
+    padding: 1rem;
+    width: 100%;
+    min-height: 10rem;
+    border: 1.6px solid rgb(185, 185, 185);
+    outline: none;
+   }
+  .contact-us .contact-form .input-row textarea:focus{
+    border: 1.6px solid #fe9616;
+   }
+  .contact-us .contact-form .input-row button{
+    border: none;
+    outline: none;
+    background-color: #fe9616;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 7px;
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+   }
+  .contact-us .contact-form .input-row button:hover{
+    background-color: #e37e03;
+   }
+  
+   .contact-us .contact-form .input-row .input-dropdown {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+  }
+  .contact-us .contact-form .input-row .input-dropdown.show {
+    display: block;
+    opacity: 1;
+    max-height: 500px; /* Adjust according to your content height */
+  }
+  .contact-us .contact-form .input-row .drop-option {
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: all 0.2s ease;
+  }
+  .contact-us .contact-form .input-row .drop-option:hover {
+      background-color: #f1f1f1;
+  }
+
+
+
+  .contact-us .contact-location{
+    width: 50%;
+    overflow: hidden;
+  }
+  .contact-us .contact-location .location{
+    width: 100%;
+    height: 25.7rem;
+    overflow: hidden;
+    /* margin-top: 4.3rem; */
+  }
+  .contact-us .contact-location .location-content{
+    margin-top: 2rem;
+  }
+  .contact-us .contact-location .location-content h5{
+    font-family: "Montserrat", sans-serif;
+  }
+  .contact-us .contact-location .location-content h5 i{
+    color: #e37e03;
+  }
+  .contact-us .contact-location .location-content p{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  /* Contact Form Section Ends Here */
+
+
+  /* Footer Styles Starts Here */
+  footer{
+    background-color: #ec9122;
+    padding: 3rem 0;
+    position: relative;
+    overflow: hidden;
+    margin-top: 5rem;
+  }
+  .footer{
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .left{
+    width: 29%;
+    color: #fff;
+  }
+  .footer .left img{
+    background-color: #fff;
+    padding: 0.5rem 0.8rem;
+    margin-top: 1rem;
+  }
+  .footer .left a{
+    color: #fff;
+  }
+  .footer .left .foot-icons{
+    margin-top: 2rem;
+  }
+  .footer .left .foot-icons i{
+    margin-right: 0.7rem;
+    font-size: 1.3rem;
+    transition: all 0.2s ease;
+  }
+  .footer .left .foot-icons i:hover{
+    scale: 1.1;
+    color: #5f86c3;
   }
   
-  /* Map Section Ends Here */
+  .footer .center{
+    width: 30%;
+  }
+  .footer .center h3{
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  .footer .center img{
+    width: 100%;
+    /* position: relative; */
+  }
+  .footer .center button{
+    position: absolute;
+    left: 75%;
+    top: 46%;
+    border: none;
+    outline: none;
+    font-size: 0.8rem;
+    padding: 2px 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px #616161;
+    background-color: #f9f9f9;
+    transition: all 0.2s ease;
+  }
+  .footer .center button:hover{
+    background-color: #ededede4;
+  }
+  .footer .center .linkedin-content{
+   height: 150px;
+   overflow-y: scroll;
+   padding: 10px;
+   background-color: #d2d0d0;
+  }
+  
+  .footer .end{
+   width: 22%;
+   color: #fff;
+   display: flex;
+   flex-direction: column;
+  }
+  .footer .end h3{
+   font-size: 1.1rem;
+  }
+  .footer .end p{
+   font-size: 0.8rem;
+  }
+  .footer .end div{
+   margin-bottom: 1rem;
+  }
+  /* .footer .end img{
+   width: 30px;
+   margin-left: 90%;
+   margin-top: 1.3rem;
+   cursor: pointer;
+   transition: all 0.3s ease;
+  } */
+  /* .footer .end img:hover{
+   scale: 1.1;
+  } */
+  .footer-line .line{
+    width: 100%;
+    height: 1.5px;
+    background-color: #fff;
+    margin-top: 1rem;
+  }
+  .copyright{
+   display: flex;
+   justify-content: space-between;
+   color: #fff;
+   margin-top: 7px;
+   font-size: 0.9rem;
+  }
+
+  #back-to-top{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    bottom: 1.2rem;
+    right: 1.4rem;
+    box-shadow: rgba(0, 0, 0, 0.308) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: all 0.3s ease;
+  }
+  #back-to-top:hover{
+      scale: 1.1;
+  }
+
+/* Footer Styles Ends Here */
